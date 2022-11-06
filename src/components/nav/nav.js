@@ -6,7 +6,7 @@ export default function Nav() {
     <div>
         <nav style= {{backgroundColor : 'red'}}>
             <div className='left-side'>
-                <img src='../img/pokeLogo '/>
+                <img src='../img/pokeLogo.png '/>
             </div>
             <div className='right-side'>
                 <ul>
