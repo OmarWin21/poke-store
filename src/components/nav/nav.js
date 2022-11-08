@@ -7,13 +7,13 @@ export default function Nav() {
     <div>
         <nav style= {{backgroundColor : 'red'}}>
             <div className='left-side'>
-                <img src={logo} alt='pokelogo'/>
+                <Link to= '/' ><img src={logo} alt='pokelogo'/></Link>
             </div>
             <div className='right-side'>
                 <ul>
-                    <li>Store</li>
-                    <li>Sign In</li>
-                    <li>Login</li>
+                    <Link to='/cards'><li>Store</li></Link>
+                   <Link to ='/singIng'><li>Sign In</li></Link>
+                    <Link to ='/login' ><li>Login</li></Link>
                 </ul>
             </div>
         </nav>
