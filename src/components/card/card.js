@@ -2,10 +2,13 @@ import React from 'react'
 
 export default function Card(props) {
 
+  console.log(props);
+
   return (
     <div>
      <div>
        <img src={props.image} alt='bu'/>
+       <h3>{props.id}</h3>
        <h3>{props.name}</h3>
        <h3>HP:{props.Hp}</h3>
        <h3>Attack: {props.attack}</h3>
