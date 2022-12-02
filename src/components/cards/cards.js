@@ -9,7 +9,7 @@ export default function Cards() {
   async function getPoke() {
     try {
       let arrPoke =[];
-      for(let i = 1; i<=200; i++){
+      for(let i = 1; i<=20; i++){
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}/`);
       // console.log(response.data.name);
       let objPokes = {
@@ -37,7 +37,7 @@ export default function Cards() {
       console.error(error);
     }
   }
-  useEffect(()=>{getPoke()}, []);
+  useEffect(() => { getPoke() }, []);
   
   return (
     <div>
