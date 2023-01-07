@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../components/img/pokestorelogo.png'
-import '../styles/login.css'
+import logo from '../../components/img/pokestorelogo.png'
+import '../../styles/login.css'
 
 const Login = () => {
     return(

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/signIn.css'
 
-export default function singIng() {
+export default function SignIn() {
   return (
 	<div className="CreateAccount">
 	<div className="CreateAccount-container">

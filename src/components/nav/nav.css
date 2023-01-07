@@ -1,5 +1,11 @@
-.navBar{
-    margin: 0px 0px 0px 0px;
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid gray;
 }
 
 .pokeLogo{
@@ -18,14 +24,6 @@
     align-items: center;
 }
 
-nav{
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 24px;
-    border-bottom: 1px solid gray;
-}
 .right-side, .left-side{
     display: flex;
     margin-left: 12px;
