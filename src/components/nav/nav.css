@@ -1,0 +1,42 @@
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid gray;
+}
+
+.pokeLogo{
+    width: 100px;
+}
+.right-side ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.left-side .logoLink{
+    display: flex;
+    align-items: center;
+}
+
+.right-side, .left-side{
+    display: flex;
+    margin-left: 12px;
+}
+
+.right-side ul .navLink{
+    text-decoration: none;
+    border: 1px solid yellow;
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+.right-side ul .navLink:hover{
+    border: 1px solid gray;
+    color: blueviolet;
+}

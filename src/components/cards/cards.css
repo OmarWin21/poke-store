@@ -1,0 +1,12 @@
+.creator-container{
+display: grid;
+place-items: center;
+}
+
+
+.card-creator{
+    display: grid;
+    grid-template-columns: repeat(5, 240px);
+    gap: 26px;
+
+}
