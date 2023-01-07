@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Card from "../card/card.js";
+import './cards.css'
 
 export default function Cards() {
 
@@ -9,7 +10,7 @@ export default function Cards() {
   async function getPoke() {
     try {
       let arrPoke =[];
-      for(let i = 1; i<=5; i++){
+      for(let i = 80; i<=120; i++){
       // const x = Math.ceil(Math.random()*500)
       // console.log(x)
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}/`);
@@ -58,19 +59,21 @@ export default function Cards() {
 
   
   return (
-    <div>
-       {
-      poke.map(e =>
-       <Card 
-          name={e.pokeName}
-          image={e.pokeImg}
-          Hp={e.pokeHp}
-          attack={e.attkPoke}
-          id={e.id}
-       />
-        )
-      }
-    </div>
 
+    <div className="creator-container">
+      <div className="card-creator">
+        {
+        poke && poke.map(e =>
+        <Card 
+            name={e.pokeName}
+            image={e.pokeImg}
+            Hp={e.pokeHp}
+            attack={e.attkPoke}
+            id={e.id}
+        />
+          )
+        }
+      </div>
+    </div>
   );
 }

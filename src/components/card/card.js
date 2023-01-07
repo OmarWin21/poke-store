@@ -1,17 +1,27 @@
 import React from 'react'
-
+import './card.css'
+import { BiCart } from "react-icons/bi";
 export default function Card(props) {
 
   console.log(props);
 
   return (
-    <div>
-     <div>
-       <img src={props.image} alt='bu'/>
-       <h3>{props.id}</h3>
-       <h3>{props.name}</h3>
-       <h3>HP:{props.Hp}</h3>
-       <h3>Attack: {props.attack}</h3>
+    <div className='main-container'>
+     <div className='cards-container'>
+
+      <div className='poke-card'>
+        <img src={props.image} alt='bu'/>
+        <div className='poke-info'>
+          <div>
+            <p>{props.name}</p>
+            <p>HP:{props.Hp}</p>
+            <p>Attack: {props.attack}</p>
+          </div>
+        <figure>
+          <BiCart className='cartIcon'/>
+        </figure>
+        </div>
+      </div>
        {/* <h3>Attack: {element.attkPoke}</h3>
        <h3>Defense: {element.defensePoke}</h3>
        <div>

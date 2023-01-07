@@ -1,0 +1,56 @@
+:root{
+    --md: 16px;
+    --lg: 18px;
+    --sm: 14px;
+}
+
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 240px);
+    gap: 26px;
+
+}
+
+.poke-card{
+    width: 240px;
+}
+.poke-card img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.poke-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.poke-info figure{
+    margin: 0;
+}
+.cartIcon{
+    width: 35px;
+    height: 35px;
+}
+
+.poke-info div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.poke-info div p:nth-child(2){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.poke-info div p:nth-child(3){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
